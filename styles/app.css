@@ -13,23 +13,25 @@
     --green-color: #0ABEAD;
     --orange-color: #F57F17;
 }
-:root.dark_mode{
+
+:root.dark_mode {
     --text-color: #95A5C6;
     --app-bg-color: #161D26;
     --section-bg-color: #1F2935;
 }
-:root.dark_mode
- .header,
- .home_photo,
- .about_container,
- .resume_list,
- .pricing_box
-{
+
+:root.dark_mode .header,
+.home_photo,
+.about_container,
+.resume_list,
+.pricing_box {
     box-shadow: none !important;
 }
-:root.dark_mode .home{
+
+:root.dark_mode .home {
     background-image: url(../images/shapes/dark_shape.svg);
 }
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -187,6 +189,7 @@ body {
     margin-left: 3rem;
     color: var(--text-color);
 }
+
 .nav_list_item--active {
     color: var(--green-color);
 }
@@ -343,7 +346,7 @@ body {
     -o-border-radius: 100%;
     margin: 0 auto;
     background-color: var(--green-color);
-    background-image: url(../images/header-avatar.jpg);
+    background-image: url(../images/myPic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 70%;
@@ -559,7 +562,7 @@ body {
 }
 
 .resume>* {
-    transform:translateZ(0) skewY(5deg);
+    transform: translateZ(0) skewY(5deg);
     -webkit-transform: skewY(5deg);
     -moz-transform: skewY(5deg);
     -ms-transform: skewY(5deg);
@@ -815,11 +818,11 @@ portfolio
 }
 
 .pricing>* {
-    transform:translateZ(0) skewY(5deg);
-    -webkit-transform:translateZ(0) skewY(5deg);
-    -moz-transform:translateZ(0) skewY(5deg);
-    -ms-transform:translateZ(0) skewY(5deg);
-    -o-transform:translateZ(0) skewY(5deg);
+    transform: translateZ(0) skewY(5deg);
+    -webkit-transform: translateZ(0) skewY(5deg);
+    -moz-transform: translateZ(0) skewY(5deg);
+    -ms-transform: translateZ(0) skewY(5deg);
+    -o-transform: translateZ(0) skewY(5deg);
 }
 
 .pricing_box {
@@ -951,7 +954,7 @@ portfolio
     height: 6rem;
     background-color: var(--app-bg-color);
     border-radius: 5rem;
-    box-shadow: 0 0 5rem rgba(96, 233, 255,0.27);
+    box-shadow: 0 0 5rem rgba(96, 233, 255, 0.27);
     position: absolute;
     top: 35%;
     left: 20%;
@@ -975,8 +978,8 @@ portfolio
     -o-border-radius: 0.5rem;
     box-shadow: 0 0 8rem rgba(19, 182, 255, .24);
     background-color: var(--app-bg-color);
-    margin-left:  auto;
-    
+    margin-left: auto;
+
 }
 
 .contact_form_tittle {
@@ -998,10 +1001,12 @@ portfolio
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
-.contact_form_input::placeholder{
+
+.contact_form_input::placeholder {
     color: inherit;
 }
-#textarea{
+
+#textarea {
     resize: vertical;
     min-height: 8rem;
     max-height: 20rem;
@@ -1031,26 +1036,28 @@ portfolio
 
 */
 
-.footer{
+.footer {}
 
-}
-.footer_container{
+.footer_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
 
 }
-.footer_copyright{
+
+.footer_copyright {
     font-family: "Poppins SemiBold";
     letter-spacing: 0.4rem;
 }
-.footer_socials{
+
+.footer_socials {
     display: flex;
     gap: 1.3rem;
 }
+
 .footer_link,
-.change_them{
+.change_them {
     display: flex;
     text-decoration: none;
     width: 5rem;
@@ -1070,15 +1077,18 @@ portfolio
     -o-transition: all 100ms ease;
     cursor: pointer;
 }
-.footer_link:hover{
+
+.footer_link:hover {
     background-color: var(--green-color);
 }
+
 .footer_link svg,
-.change_them svg{
+.change_them svg {
     width: 3.5rem;
     height: 3.5rem;
     fill: var(--app-bg-color);
 }
-.change_them svg{
+
+.change_them svg {
     fill: #fff;
 }
